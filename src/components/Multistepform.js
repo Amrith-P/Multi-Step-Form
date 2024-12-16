@@ -7,7 +7,8 @@ function MultiStepForm() {
 
   return (
     <div>
-      <form></form>
+      <form>
+      </form>
     </div>
   );
 }

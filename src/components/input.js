@@ -1,4 +1,4 @@
-function Input({ name, value, onChange, label, placeholder, type = "text",...rest }) {
+function Input({ name, value, onChange, label, placeholder, type = "text",accept,...rest }) {
   return (
     <div>
       <div>
@@ -9,6 +9,7 @@ function Input({ name, value, onChange, label, placeholder, type = "text",...res
           value={value}
           onChange={onChange}
           placeholder={placeholder || label}
+          accept={accept}
           required
           {...rest}
         />
