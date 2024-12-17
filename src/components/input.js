@@ -1,8 +1,10 @@
 function Input({ name, value, onChange, label, placeholder, type = "text",accept,...rest }) {
+
   return (
-    <div>
-      <div>
+    <div className="input-wrap">
+       <label for={name}>{label}</label>
         <input
+        className="input-box"
           name={name}
           type={type}
           id={name}
@@ -13,8 +15,9 @@ function Input({ name, value, onChange, label, placeholder, type = "text",accept
           required
           {...rest}
         />
-        <label for={name}>{label}</label>
-      </div>
+       
+
+      
     </div>
   );
 }

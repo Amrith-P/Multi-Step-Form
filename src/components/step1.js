@@ -1,25 +1,27 @@
 import Input from "./input";
-import CustomButton from "./button";
 
-function Step1(){
+function Step1({ formData, setFormData }) {
+  return (
+    <div>
+      <h2>Step 1: Personal Details</h2>
 
-    return (
-        <div>
-            <h2>Step 1: Personal Details</h2>
-            <label>Name:</label>
-            <Input
-                type={"text"}
-                placeholder={"Name"}
-                
-            />
-            <label>Email:</label>
-            <Input
-                type={"email"}
-                placeholder={"Email"}
-                
-            />
-            <CustomButtonutton>{"Next"}</CustomButtonutton>
-        </div>
-    );
-};
+      <Input
+        label={"Enter Name"}
+        type={"text"}
+        placeholder={"Name"}
+        value={formData.name}
+        onChange={(e) => setFormData({ name: e.target.value })}
+      />
+
+      <Input
+        label={"Email"}
+        type={"email"}
+        placeholder={"Email"}
+        value={formData.email}
+        onChange={(e) => setFormData({ email: e.target.value })}
+      />
+    </div>
+  );
+  console.log();
+}
 export default Step1;
