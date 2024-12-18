@@ -7,96 +7,90 @@
 
 .progress-bar {
   height: 100%;
-  
+
 
   background-color: #4caf50;
   width: 0;
   transition: width 0.4s ease-in-out;
- 
+
 }
 
-  .progress-bar-container {
-    width: 96%;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 10px;
-    margin: 10px;
-    
-   
+.progress-bar-container {
+  width: 96%;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 10px;
+  margin: 10px;
 }
-.form-container{
+
+.form-container {
   width: 50%;
   background-color: rgb(224, 227, 230);
   height: 50%;
   border: 3px solid black;
   border-radius: 20px;
- 
-
 }
 
-.input-box{
+.input-box {
   width: 90%;
-    padding: 10px;          
-    margin: 10px 0;         
-    border: 2px solid #ccc; 
-    border-radius: 5px;     
-    font-size: 16px;        
-    transition: border-color 0.3s ease;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
-.input-wrap{
+
+.input-wrap {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 10px;
 }
-.button-style{
- 
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 6px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
+
+.button-style {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .basic-button:hover {
-    background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
 .gender-selector-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start; 
+  align-items: start;
   padding: 10px;
-   
-  margin: 10px 0; 
+  margin: 10px 0;
 
 }
-
-
 
 .gender-selector {
   width: 90%;
-  padding: 10px;          
-  margin: 10px 0;         
-  border: 2px solid #ccc; 
-  border-radius: 5px;     
-  font-size: 16px;        
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
   transition: border-color 0.3s ease;
 }
-
 
 .gender-selector-container::after {
   content: "▼";
   position: absolute;
   right: 15px;
-  top: 45px; 
+  top: 45px;
   pointer-events: none;
   color: #888;
 }
@@ -115,21 +109,19 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start; 
+  align-items: start;
   padding: 10px;
-   
-  margin: 10px 0; 
+
+  margin: 10px 0;
 }
-
-
 
 .date-picker {
   width: 90%;
-  padding: 10px;          
-  margin: 10px 0;         
-  border: 2px solid #ccc; 
-  border-radius: 5px;     
-  font-size: 16px;        
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
   transition: border-color 0.3s ease;
 }
 
