@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Input from "./input";
-function Step3({ formData, setFormData }) {
+function Step3({ formData, setFormData, errors }) {
   const [image, setImage] = useState("");
   const handleFileChange = (e) => {
     setImage(URL.createObjectURL(e.target.files[0]));
@@ -10,8 +10,14 @@ function Step3({ formData, setFormData }) {
   return (
     <div>
       <h2>Step 3: Upload Image</h2>
-      <label>Profile Picture:</label>
-      <Input type={"file"} accept="image/*" onChange={handleFileChange} />
+      <Input
+        type={"file"}
+        accept="image/*"
+        onChange={handleFileChange}
+        name={"Image"}
+        errors={errors}
+        label={"Select an image file"}
+      />
       {image && (
         <img
           src={image}

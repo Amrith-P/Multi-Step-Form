@@ -16,11 +16,10 @@
 }
 
   .progress-bar-container {
-    width: 90%;
+    width: 96%;
     background-color: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
-    
     height: 10px;
     margin: 10px;
     
@@ -28,9 +27,10 @@
 }
 .form-container{
   width: 50%;
-  background-color: rgb(101, 157, 205);
+  background-color: rgb(224, 227, 230);
   height: 50%;
   border: 3px solid black;
+  border-radius: 20px;
  
 
 }
@@ -72,7 +72,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: start; 
+  padding: 10px;
    
   margin: 10px 0; 
 
@@ -81,13 +82,13 @@
 
 
 .gender-selector {
-  width: 60%;            
-    padding: 10px;          
-    margin: 10px 0;         
-    border: 2px solid #ccc; 
-    border-radius: 5px;     
-    font-size: 16px;        
-    transition: border-color 0.3s ease;
+  width: 90%;
+  padding: 10px;          
+  margin: 10px 0;         
+  border: 2px solid #ccc; 
+  border-radius: 5px;     
+  font-size: 16px;        
+  transition: border-color 0.3s ease;
 }
 
 
@@ -114,7 +115,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: start; 
+  padding: 10px;
    
   margin: 10px 0; 
 }
@@ -122,23 +124,21 @@
 
 
 .date-picker {
-  width: 100%;
-  padding: 10px 12px;
-  font-size: 16px;
-  color: #333;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 90%;
+  padding: 10px;          
+  margin: 10px 0;         
+  border: 2px solid #ccc; 
+  border-radius: 5px;     
+  font-size: 16px;        
+  transition: border-color 0.3s ease;
 }
 
 .date-picker:hover {
   border-color: #007bff;
 }
-label{
-  font-size: 16px;
-  color: #333;
-  font-weight: bold;
-  
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }

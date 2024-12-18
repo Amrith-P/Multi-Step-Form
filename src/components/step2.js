@@ -1,6 +1,6 @@
 import Input from "./input";
 
-function Step2({ formData, setFormData }) {
+function Step2({ formData, setFormData, errors }) {
   return (
     <div>
       <h2>Step 2: Additional Details</h2>
@@ -11,6 +11,7 @@ function Step2({ formData, setFormData }) {
           className="gender-selector"
           value={FormData.gender}
           onChange={(e) => setFormData({ gender: e.target.value })}
+          errors={errors}
         >
           <option value="" disabled selected>
             Select Gender
@@ -19,13 +20,18 @@ function Step2({ formData, setFormData }) {
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
+        {errors && errors["gender"] && (
+          <p className="error-message">{errors["gender"]}</p>
+        )}
       </div>
       <div className="date-picker-container">
         <label>Date of Birth</label>
-        <Input 
+        <Input
           type={"date"}
           value={formData.dob}
           onChange={(e) => setFormData({ dob: e.target.value })}
+          errors={errors}
+          name={"dob"}
         />
       </div>
     </div>
