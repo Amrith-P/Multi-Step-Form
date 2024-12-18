@@ -9,7 +9,6 @@ function Input({
   errors,
   ...rest
 }) {
-  console.log({ errors }, "i");
   return (
     <div className="input-wrap">
       <label for={name}>{label}</label>

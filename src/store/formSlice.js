@@ -31,15 +31,7 @@ const formSlice = createSlice({
       updateErrors: (state,action)=>{
         state.errors = {...state.errors,...action.payload};
       },
-      clearErrors:(state)=>{
-        state.errors={
-          name:"",
-          email:"",
-          gender:"",
-          dob:"",
-          image:"",
-        }
-      },
+     
       clearFormData:(state)=>{
         state.currentStep=1;
         state.formData={
@@ -53,5 +45,5 @@ const formSlice = createSlice({
   },
 });
 
-export const { nextStep, prevStep, updateFormData,updateErrors,clearErrors,clearFormData } = formSlice.actions;
+export const { nextStep, prevStep, updateFormData,updateErrors,clearFormData } = formSlice.actions;
 export default formSlice.reducer;

@@ -26,6 +26,5 @@ function Step1({ formData, setFormData, errors }) {
       />
     </div>
   );
-  console.log();
 }
 export default Step1;

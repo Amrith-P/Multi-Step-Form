@@ -4,7 +4,6 @@ import {
   prevStep,
   updateFormData,
   updateErrors,
-  clearErrors,
   clearFormData,
 } from "../store/formSlice";
 import Step1 from "./step1";
@@ -56,13 +55,11 @@ function MultiStepForm() {
     const isError = Object.values(newErrors).filter((a) => a && a);
     return isError.length === 0;
   };
-  console.log({ errors });
   const handleUpdateFormData = (newData) => {
     dispatch(updateFormData(newData));
   };
   const HandleNextStep = () => {
     if (validateFields()) {
-      
       dispatch(nextStep());
     }
   };
@@ -73,9 +70,10 @@ function MultiStepForm() {
   const submitForm = () => {
     if (validateFields()) {
       console.log({ formData });
-      alert("Form submitted successfully:\n" + JSON.stringify(formData, null, 2));
+      alert(
+        "Form submitted successfully:\n" + JSON.stringify(formData, null, 2)
+      );
       dispatch(clearFormData());
-      
     }
   };
 
@@ -107,7 +105,6 @@ function MultiStepForm() {
           formData={formData}
           setFormData={handleUpdateFormData}
           errors={errors}
-          
         ></Step2>
       )}
       {currentStep === 3 && (
